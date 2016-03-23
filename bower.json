@@ -1,11 +1,11 @@
 {
   "name": "jquery-divulge",
   "version": "0.9.0",
-  "description": "A countdown timer plugin for Moment.js Duration",
-  "main": ["jquery-divulge.js"],
+  "description": "A lightweight plugin for lazy-triggering events when scrolling elements in view",
+  "main": "jquery-divulge.js",
   "keywords": [
     "jQuery",
-    "lazy",
+    "lazy"
   ],
   "authors": [
     "Patrik Svensson"
@@ -13,7 +13,7 @@
   "license": "MIT",
   "homepage": "https://github.com/PatrikS/divulge/",
   "ignore": [
-    "**/.*",    
+    "**/.*",
     "bower_components"
   ],
   "dependencies": {
