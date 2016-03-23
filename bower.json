@@ -1,0 +1,22 @@
+{
+  "name": "jquery-divulge",
+  "version": "0.9.0",
+  "description": "A countdown timer plugin for Moment.js Duration",
+  "main": ["jquery-divulge.js"],
+  "keywords": [
+    "jQuery",
+    "lazy",
+  ],
+  "authors": [
+    "Patrik Svensson"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/PatrikS/divulge/",
+  "ignore": [
+    "**/.*",    
+    "bower_components"
+  ],
+  "dependencies": {
+    "jquery": ">=1.7"
+  }
+}
