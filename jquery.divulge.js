@@ -1,6 +1,9 @@
-// Licensed under the MIT license.
-// Copyright 2016 Patrik Svensson
-// https://github.com/PatrikS/divulge
+/*!
+ * jQuery Divulge v0.9.1
+ * https://github.com/PatrikS/divulge
+ * Copyright 2016 Patrik Svensson
+ * Licensed under the MIT license
+ */
 
 ; (function ($) {
 
@@ -33,12 +36,12 @@
             return;
         }
 
-        $this.trigger("divulged");
-        $this.data("divulged", true);
-
         if (options.callback) {
             options.callback(this);
         }
+
+        $this.trigger("divulged");
+        $this.data("divulged", true);
     });
 
     function divulge() {
@@ -50,7 +53,7 @@
 
             var windowTop     = $window.scrollTop(),
                 windowBottom  = windowTop + windowHeight,
-                containerTop  = $container !== $window ? windowTop - $container.offset().top : 0,
+                containerTop  = $container === $window ? 0 : windowTop - $container.offset().top,
                 elementTop    = $element.offset().top + containerTop,
                 elementBottom = elementTop + $element.height();
 
@@ -69,7 +72,9 @@
     function debounce(fn) {
         var timer;
         return function () {
-            if (timer) clearTimeout(timer);
+            if (timer) {
+                clearTimeout(timer);
+            }
             timer = setTimeout(fn, options.debounce || 0);
         };
     }

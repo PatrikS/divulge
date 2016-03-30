@@ -1,8 +1,8 @@
 {
   "name": "jquery-divulge",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description": "A lightweight plugin for lazy-triggering events when scrolling elements in view",
-  "main": "jquery-divulge.js",
+  "main": "jquery.divulge.js",
   "keywords": [
     "jQuery",
     "lazy"
